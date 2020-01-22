@@ -81,6 +81,7 @@ router.post('/:id/steps', (req, res) => {
   });
 });
 
+// DONE
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
