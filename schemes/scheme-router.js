@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
   });
 });
 
+// DONE!
 router.get('/:id', (req, res) => {
   const { id } = req.params;
 
@@ -47,6 +48,7 @@ router.get('/:id/steps', (req, res) => {
   });
 });
 
+// DONE
 router.post('/', (req, res) => {
   const schemeData = req.body;
 
