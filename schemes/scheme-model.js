@@ -48,7 +48,6 @@ function update(changes, id) {
 }
 
 function remove(id) {
-    console.log(id)
     return findById(id)
         .then(schemeId => {
             if (schemeId) {
