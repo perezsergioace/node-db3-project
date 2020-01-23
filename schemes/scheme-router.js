@@ -4,6 +4,7 @@ const Schemes = require('./scheme-model.js');
 
 const router = express.Router();
 
+// DONE!
 router.get('/', (req, res) => {
   Schemes.find()
   .then(schemes => {
@@ -14,6 +15,7 @@ router.get('/', (req, res) => {
   });
 });
 
+// DONE!
 router.get('/:id', (req, res) => {
   const { id } = req.params;
 
@@ -46,6 +48,7 @@ router.get('/:id/steps', (req, res) => {
   });
 });
 
+// DONE
 router.post('/', (req, res) => {
   const schemeData = req.body;
 
@@ -78,6 +81,7 @@ router.post('/:id/steps', (req, res) => {
   });
 });
 
+// DONE
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
